@@ -1,0 +1,13 @@
+<div>
+  <h3>Define Warning Levels</h3>
+  <div *ngFor="let warning of warningLevels; let i = index">
+    <span>Threshold: {{ warning.threshold }} - Color: {{ warning.color }}</span>
+  </div>
+  <div>
+    <label for="threshold">Threshold:</label>
+    <input id="threshold" type="number" [(ngModel)]="newThreshold">
+    <label for="color">Color:</label>
+    <input id="color" type="text" [(ngModel)]="newColor">
+    <button (click)="addWarningLevel()">Add Warning Level</button>
+  </div>
+</div>

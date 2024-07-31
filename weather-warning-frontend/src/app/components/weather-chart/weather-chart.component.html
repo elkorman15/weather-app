@@ -1,0 +1,14 @@
+
+@if(location) {
+        <div style="display: block;">
+                <canvas baseChart
+                        [datasets]="chartData.datasets"
+                        [labels]="chartData.labels"
+                        [options]="chartOptions"
+                        chartType="line"
+                        >
+                </canvas>
+        </div>
+        
+}
+
